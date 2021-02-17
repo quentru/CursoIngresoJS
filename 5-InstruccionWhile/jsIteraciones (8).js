@@ -1,14 +1,22 @@
 function mostrar()
 {
-
-	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	
-	var respuesta='si';
-
-
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+	var numeroIngresado;
+	var respuesta = "s";
+	while(respuesta != "n")
+	{
+			numeroIngresado = parseInt(prompt("Ingrese un numero"));
+			if(numeroIngresado*(-1) > 0 )
+			{
+				negativo = negativo * numeroIngresado;
+			}else
+			{
+				positivo = positivo + numeroIngresado;
+			}
+			respuesta = prompt("'n' para detenerse");
+	}
+document.getElementById('suma').value = positivo;
+document.getElementById('producto').value = negativo;
 
 }//FIN DE LA FUNCIÓN

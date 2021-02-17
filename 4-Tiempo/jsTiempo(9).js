@@ -1,5 +1,4 @@
 var miTemporizador ;
-var contador=0;
 var tiempoInicio;
 var tiempoFinal;
 
@@ -10,17 +9,17 @@ function inicio()
 	//alert(random);
 	alert("function inicio.");
 	miTemporizador = setTimeout(SegundosEnElAire, random);
-	
+
 }//FIN DE LA FUNCIÓN inicio
 
 function SegundosEnElAire() {
 
 
-	document.getElementById("secreto").style.visibility="visible"; 
+	document.getElementById("secreto").style.visibility="visible";
  	tiempoInicio=  new Date();
  	tiempoInicio=tiempoInicio.getTime();
  	//alert(tiempoInicio);
-   
+
 }//FIN DE LA FUNCIÓN SegundosEnElAire
 
 function ContarMilisegundos()
